@@ -4,7 +4,15 @@
     {%- include head.html -%}
 
     <body>
-
+        <script>
+            window.onload = function() {
+                Particles.init({
+                    selector: '.background',
+                });
+            };
+        </script>
+        <canvas class="background"></canvas>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
         {%- include header.html -%}
 
         <main class="page-content" aria-label="Content">
@@ -13,6 +21,7 @@
             </div>
         </main>
 
+        {%- include footer.html -%}
         <script>
             window.FontAwesomeConfig = {
                 searchPseudoElements: true
