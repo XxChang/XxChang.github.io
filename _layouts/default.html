@@ -1,13 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
-  {% include head.html %}
-<body ontouchstart="">
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
-  {% include nav.html %}
+    {%- include head.html -%}
 
-  {{ content }}
+    <body>
 
-  {% include footer.html %}
+        {%- include header.html -%}
 
-</body>
+        <main class="page-content" aria-label="Content">
+            <div class="wrapper">
+                {{ content }}
+            </div>
+        </main>
+
+        <script>
+            window.FontAwesomeConfig = {
+                searchPseudoElements: true
+            }
+        </script>
+    </body>
 </html>

@@ -1,39 +1,22 @@
 # Site settings
-title: Chang's Blog
-SEOTitle: 我的博客 | Chang's Blog
-header-img: img/home-bg.jpg
-email: xuxchang@hotmail.com
-description: ""
-keyword: ""
-url: "https://xxchang.github.io"              # your host, for absolute URL
-baseurl: ""         # for example, '/blog' if your blog hosted on 'host/blog'
+title: CyberBits
 
-RSS: false
-# weibo_username:     huxpro
-# zhihu_username:     huxpro
-github_username:    XxChang
+paginate: 1
+paginate_path: "/blog/page:num/"
 
-# Build settings
-# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
-highlighter: rouge
-permalink: pretty
-paginate: 10
-exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
-anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
+# jekyll-dash date format
+# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
+dash:
+  # generate social links in footer
+  # supported colors: green, red, orange, blue, cyan, pink, teal, yellow, indigo, purple
+  social_links:
+    - url: https://github.com/XxChang
+      icon: github
+      color: purple
 
-# Gems
-# from PR#40, to support local preview for Jekyll 3.0
-plugins: [jekyll-paginate]
-
-markdown: kramdown
-kramdown:
-  input: GFM                            # use Github Flavored Markdown !important
-
-  # Sidebar settings
-sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "宇宙之大，无奇不有"
-sidebar-avatar: img/avatar-chang.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
-
-# Featured Tags
-featured-tags: true                     # whether or not using Feature-Tags
-featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
+plugins:
+ - jekyll-feed
+ - jekyll-seo-tag
+ - jekyll-paginate
+ - liquid-md5
+ - jekyll/tagging
