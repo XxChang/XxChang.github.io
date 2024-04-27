@@ -3,7 +3,7 @@ title: CyberBits
 author: Chang Xu
 email: xuxchang@hotmail.com
 description: > # this means to ignore newlines until "show_exerpts:"
-  嗨！大家好，我是一名嵌入式软工，这里是我的个人博客，主要分享一些技术文章，欢迎大家来访！
+  嗨！大家好，我是一名嵌入式软工，这里是我的个人博客，欢迎大家来访！
 show_excerpts: false # set to true to show excerpts on the homepage
 
 paginate: 1
